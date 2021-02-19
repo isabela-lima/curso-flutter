@@ -1,6 +1,8 @@
 import 'package:path/path.dart';
 import "package:sqflite/sqflite.dart";
 
+// Pode ser reutilazado para pegar dados e colocar em uma database.
+
 final String contactTable = "contactTable";
 final String idColumn = "idColumn";
 final String nameColumn = "nameColumn";
@@ -95,6 +97,8 @@ class Contact {
   String email;
   String phone;
   String img;
+
+  Contact();
 
   Contact.fromMap(Map map) {
     id = map[idColumn];
