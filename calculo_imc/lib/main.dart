@@ -87,6 +87,7 @@ class _HomeState extends State<Home> {
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.green, fontSize: 25.0),
                   controller: weightController,
+                  // ignore: missing_return
                   validator: (value) {
                     if (value.isEmpty) {
                       return "Insira seu peso!";
@@ -101,6 +102,7 @@ class _HomeState extends State<Home> {
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.green, fontSize: 25.0),
                   controller: heightController,
+                  // ignore: missing_return
                   validator: (value) {
                     if (value.isEmpty) {
                       return "Insira sua altura!";
